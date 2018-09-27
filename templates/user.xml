@@ -1,0 +1,87 @@
+<templateSet group="user">
+  <template name="cc" value="/**&#10; * Class Name: $class_name$.java&#10; * &#10; * Function: $END$&#10; * &#10; * version 1.0&#10; * since  $date$ $time$&#10; */" description="Class Comment" toReformat="false" toShortenFQNames="true">
+    <variable name="class_name" expression="className()" defaultValue="" alwaysStopAt="false" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="false" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="sc" value="/**&#10; *  $END$&#10; */" description="Simple Comment" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mc" value="/**&#10; * Function: &#10; * &#10; * author liuzheng&#10; *&#10; * param $param$&#10; * return $return$&#10; * &#10; */" description="Method Comment" toReformat="false" toShortenFQNames="true">
+    <variable name="param" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="return" expression="methodReturnType()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="sj" value="$date$ $time$ liuzheng" description="show date author" toReformat="false" toShortenFQNames="true">
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="false" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+    </context>
+  </template>
+  <template name="lz" value="/**&#10; * Class Name: $class_name$.java&#10; * &#10; * Function:&#10; * &#10; * author liuzheng&#10; * version 1.0&#10; * since  $date$ $time$ &#10; * copyright http://liuz.me&#10; * &#10; * .....&#10; * &#10; */" description="self class comment" toReformat="false" toShortenFQNames="true">
+    <variable name="class_name" expression="className()" defaultValue="" alwaysStopAt="false" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="false" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="nmp" value="public void $method_name$(){&#10;&#9;&#10;}" description="new public method" toReformat="false" toShortenFQNames="true">
+    <variable name="method_name" expression=" " defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="psh" value="private final MyHandler mHandler = new MyHandler(this);&#10;private static class MyHandler extends android.os.Handler {&#10;&#9;private WeakReference&lt;$className$&gt; activityWeakReference;&#10;&#10;&#9;public MyHandler($className$ activity) {&#10;&#9;&#9;activityWeakReference = new WeakReference&lt;$className$&gt;(activity);&#10;&#9;}&#10;&#10;&#9;@Override&#10;&#9;public void handleMessage(Message msg) {&#10;&#9;&#9;$className$ activity = activityWeakReference.get();&#10;&#9;&#9;if (activity != null) {&#10;&#10;&#9;&#9;}&#10;&#9;}&#10;}" description="create handler" toReformat="false" toShortenFQNames="true">
+    <variable name="className" expression="className()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="xc" value="&lt;!-- $END$ --&gt;" description="&lt;!----&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="trf" value="try {&#10;&#9;$END$&#10;} catch (Exception ex){&#10;&#9;ex.printStackTrace();&#10;} finally {&#10;  &#10;}" description="surround try catch finally" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="tr" value="try {&#10;&#9;$END$&#10;} catch (Exception ex){&#10;&#9;ex.printStackTrace();&#10;}" description="surround try catch" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="singleton" value="&#10;private $CLASS_NAME$(){}&#10;&#10;private static $CLASS_NAME$ instance = null;&#10;&#10;public static $CLASS_NAME$ getInstance(){&#10;&#9;if(instance == null){&#10;&#9;&#9;synchronized($CLASS_NAME$.class){&#10;&#9;&#9;&#9;if(instance == null){&#10;&#9;&#9;&#9;&#9;instance = new $CLASS_NAME$();&#10;&#9;&#9;&#9;}&#10;&#9;&#9;}&#10;&#9;}&#10;&#9;return instance;&#10;}" description="create singleton" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="lc" value="/** $END$ **/" description="line comment" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="KOTLIN" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+</templateSet>
