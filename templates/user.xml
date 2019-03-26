@@ -84,7 +84,7 @@
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="dp" value="print($END$);" description="dart print" toReformat="false" toShortenFQNames="true">
+  <template name="pd" value="print($END$);" description="dart print" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="DART" value="true" />
     </context>
