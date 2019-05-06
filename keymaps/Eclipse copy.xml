@@ -1,4 +1,5 @@
 <keymap version="1" name="Eclipse copy" parent="Eclipse">
+  <action id="Arrangement.Rule.Match.Condition.Move.Down" />
   <action id="CloseActiveTab" />
   <action id="CloseContent">
     <keyboard-shortcut first-keystroke="ctrl w" />
@@ -6,9 +7,14 @@
   <action id="DuplicatesForm.SendToLeft" />
   <action id="FileChooser.GotoHome" />
   <action id="GotoBookmark1" />
+  <action id="MoveLineDown">
+    <keyboard-shortcut first-keystroke="alt down" />
+  </action>
+  <action id="MoveStatementDown" />
   <action id="RevealIn">
     <keyboard-shortcut first-keystroke="alt e" />
   </action>
+  <action id="ShowContent" />
   <action id="ShowIntentionActions">
     <keyboard-shortcut first-keystroke="ctrl 1" />
   </action>
