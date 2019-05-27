@@ -4,4 +4,7 @@
     <option name="XML_ATTRIBUTE_WRAP" value="0" />
     <option name="XML_TEXT_WRAP" value="0" />
   </XML>
+  <codeStyleSettings language="JAVA">
+    <option name="WRAP_LONG_LINES" value="true" />
+  </codeStyleSettings>
 </code_scheme>
