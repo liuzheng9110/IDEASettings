@@ -89,4 +89,10 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="cl" value="console.log($END$);" description="console.log" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
 </templateSet>
