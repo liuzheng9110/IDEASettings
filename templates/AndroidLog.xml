@@ -4,5 +4,6 @@
     <variable name="LINE_NUM" expression="lineNumber()" defaultValue="" alwaysStopAt="false" />
     <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="false" />
     <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
   </template>
 </templateSet>
