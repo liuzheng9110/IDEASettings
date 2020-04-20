@@ -3,15 +3,16 @@
     <option name="customScope" value="Current File" />
     <option name="defaultScopeName" value="Current File" />
     <option name="SEARCH_SCOPE" value="Current File" />
+    <option name="FILE_MASK" value="*.xml" />
     <mask>*.properties</mask>
     <mask>*.as</mask>
     <mask>*.mxml</mask>
     <mask>*.js</mask>
     <mask>*.java</mask>
-    <mask>*.xml</mask>
     <mask>*.html</mask>
     <mask>clyx.html</mask>
     <mask>*.css</mask>
     <mask>*.jsp</mask>
+    <mask>*.xml</mask>
   </component>
 </application>
