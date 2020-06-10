@@ -1,5 +1,4 @@
 <code_scheme name="Default" version="173">
-  <option name="RIGHT_MARGIN" value="150" />
   <JavaCodeStyleSettings>
     <option name="IMPORT_LAYOUT_TABLE">
       <value>
@@ -17,9 +16,6 @@
     <option name="XML_ATTRIBUTE_WRAP" value="0" />
     <option name="XML_TEXT_WRAP" value="0" />
   </XML>
-  <codeStyleSettings language="HTML">
-    <option name="RIGHT_MARGIN" value="200" />
-  </codeStyleSettings>
   <codeStyleSettings language="JAVA">
     <option name="WRAP_LONG_LINES" value="true" />
     <indentOptions>
